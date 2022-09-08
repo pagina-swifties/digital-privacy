@@ -34,6 +34,7 @@ body {
 #tagline {
     font-size: 13rem;
     font-weight: 700;
+    line-height: 20rem;
     cursor: default;
 }
  
@@ -41,7 +42,7 @@ body {
     background: #ffa31a;
     border-radius: 2.5rem;
     color: #1b1b1b;
-    padding: 1rem;
+    padding: 1rem 5rem;
 }
  
 section {
