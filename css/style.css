@@ -110,7 +110,31 @@ section {
     color: #ffa31a;
   }
 
-  section#consequences{
-    background: url('https://www.spirion.com/wp-content/uploads/2020/11/DataSecurity-blog-image.png') no-repeat center center/cover;;
-  }
-  
+section#consequences{
+  background: url('https://www.spirion.com/wp-content/uploads/2020/11/DataSecurity-blog-image.png') no-repeat center center/cover;;
+}
+
+/* Personal Protection Style */
+ul.protection-unordered{
+  display: flex;
+  font-size: 15px;
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+ul.protection-unordered li{
+  border-color: orange;
+  border-width: .1px;
+  border-style: solid;
+  display: grid;
+  height: 25rem;
+  margin: .5rem;
+  margin-left: 5rem;
+  padding: 2rem;
+  text-align: center;
+  width: 50rem;
+}
+
+span#data-highlight{
+  color: #ffa31a;
+}
