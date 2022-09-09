@@ -114,6 +114,38 @@ section#consequences{
 }
 
 /* Personal Protection Style */
+div#boxleft-shape{
+  position: absolute;
+  background: red;
+  left: 0px;
+  width: 50%;
+  height: 350px;
+}
+
+div#boxright-shape{
+  position: absolute;
+  background: red;  
+  border-radius: 20px;
+  right: 0px;
+  width: 50%;
+  height: 400px;
+  animation: test 1s ease-in-out;
+}
+
+div#circle-shape{
+  position: absolute;
+  background: orange;  
+  border-radius: 75px;
+  width: 300px;
+  height: 300px;
+  transition: transform 1s ease-in-out;
+}
+
+div#circle-shape:hover{
+  transform: rotate(360deg);
+  cursor: pointer;
+}
+
 ul.protection-unordered{
   display: flex;
   font-size: 15px;
