@@ -141,3 +141,17 @@ section {
 #importance .section-content {
   align-items: start;
 }
+
+/* Devices from 993px to 1200px (inclusive) */
+@media (max-width: 1200px) {
+
+}
+
+/* Devices from 769px to 992px (inclusive) */
+@media (max-width: 992px) {	
+
+}
+/* Devices from 0px to 768px (inclusive) */
+@media (max-width: 768px) {
+
+}
