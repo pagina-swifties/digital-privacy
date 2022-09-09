@@ -48,82 +48,83 @@ body {
 
 
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5rem;
-    width: 50vw;
- /*Testing only remove if necessary */
-    justify-content: center;
-    text-align: start;
-    width: 100%;
-    height: 100vh;
-   
-    /* Scroll Snap */
-    scroll-snap-align: center;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  width: 100vw;
+  /*Testing only remove if necessary */
+  justify-content: center;
+  text-align: start;
+  min-height: 100vh;
+  
+  /* Scroll Snap */
+  scroll-snap-align: center;
+}
 
 .section-heading {
-  text-align: justify;
-    font-size: 6rem;
-    margin-bottom: 2rem;
-    font-family: 'BebasNeueRegular';
-    font-weight: normal;
-    font-style: normal;
-
- 
+  text-align: center;
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  font-family: 'BebasNeueRegular';
+  font-weight: normal;
+  font-style: normal;
 }
- 
+
 .section-content {
-    font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  font-size: 2rem;
 }
 .navbar {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 60px;
-    background: rgba(0,0,0,0.7);
-  }
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background: rgba(0,0,0,0.7);
+}
   
-  .navbar ul {
-    display: flex;
-    list-style: none;
-    width: 100%;
-    justify-content: center;
-  }
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
   
-  .navbar ul li {
-    margin: 0 1rem;
-    padding: 1rem;
-  }
+.navbar ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
   
-  .navbar ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 2rem;
-    color: #f4f4f4;
-  }
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #f4f4f4;
+}
   
-  .navbar ul li a:hover {
-    color: #ffa31a;
-  }
+.navbar ul li a:hover {
+  color: #ffa31a;
+}
 
-section#consequences{
+#consequences{
   background: url('https://www.spirion.com/wp-content/uploads/2020/11/DataSecurity-blog-image.png') no-repeat center center/cover;;
 }
 
 /* Personal Protection Style */
-ul.protection-unordered{
+.protection-unordered{
   display: flex;
   font-size: 15px;
   list-style: none;
   margin-bottom: 1rem;
 }
 
-ul.protection-unordered li{
+.protection-unordered li{
   border-color: orange;
   border-width: .1px;
   border-style: solid;
@@ -134,4 +135,9 @@ ul.protection-unordered li{
   padding: 2rem;
   text-align: center;
   width: 50rem;
+}
+
+
+#importance .section-content {
+  align-items: start;
 }
