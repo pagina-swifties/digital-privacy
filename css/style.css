@@ -63,12 +63,13 @@ section {
   }
 
 .section-heading {
-  text-align: center;
+  text-align: justify;
     font-size: 6rem;
     margin-bottom: 2rem;
     font-family: 'BebasNeueRegular';
     font-weight: normal;
     font-style: normal;
+
  
 }
  
