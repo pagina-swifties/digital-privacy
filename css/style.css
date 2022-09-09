@@ -132,3 +132,25 @@ ul.protection-unordered li{
   text-align: center;
   width: 50rem;
 }
+
+/* About Us */
+section#about{
+  margin-top: 10rem;
+}
+div#kief{
+  margin-top: 5rem;
+}
+div#kief h2{
+  font-size: 45px;
+  text-align: center;
+}
+
+div#kief p{
+  font-size: 35px;
+  text-align: left;
+}
+
+div#kief label{
+  font-size: 35px;
+  text-align: left;
+}
