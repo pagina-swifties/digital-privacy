@@ -129,6 +129,12 @@ section {
   border-bottom: 0.10rem solid orange;
 }
 
+/* Bullet */
+
+.bullet{
+  font-weight: bold;
+
+}
 /* Consequences  */
 
 
@@ -185,12 +191,6 @@ dd {
   margin-left: 5vw;
   margin-bottom: 5vh;
 }
-
-
-
-
-
-
 
 
 /* Consequences End */
