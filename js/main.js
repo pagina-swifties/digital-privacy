@@ -70,20 +70,20 @@ lock.onclick = function(){
 		twofa.className = "";
 		otp.className = "";
 		strong_pass.className = "";
-		update_software.classList.toggle("animation-scaledown");
-		twofa.classList.toggle("animation-scaledown");
-		otp.classList.toggle("animation-scaledown");
-		strong_pass.classList.toggle("animation-scaledown");
+		update_software.classList.toggle("animation-scaledown1");
+		twofa.classList.toggle("animation-scaledown2");
+		otp.classList.toggle("animation-scaledown3");
+		strong_pass.classList.toggle("animation-scaledown4");
 	}else if(circle.className == "circle-shape"){
 		console.log("hehilo");
 		update_software.className = "";
 		twofa.className = "";
 		otp.className = "";
 		strong_pass.className = "";
-		update_software.classList.toggle("animation-scaleup");
-		twofa.classList.toggle("animation-scaleup");
-		otp.classList.toggle("animation-scaleup");
-		strong_pass.classList.toggle("animation-scaleup");
+		update_software.classList.toggle("animation-scaleup1");
+		twofa.classList.toggle("animation-scaleup3");
+		otp.classList.toggle("animation-scaleup4");
+		strong_pass.classList.toggle("animation-scaleup4");
 	}
 	boxright.classList.toggle("move-right");
 	boxleft.classList.toggle("move-left");

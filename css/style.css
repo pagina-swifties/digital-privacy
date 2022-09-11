@@ -206,7 +206,7 @@ div#boxleft-shape{
   left: 0px;
   width: 50%;
   height: 350px;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.7s ease-in-out;
 }
 
 div#boxright-shape{
@@ -216,17 +216,21 @@ div#boxright-shape{
   right: 0px;
   width: 50%;
   height: 400px;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.7s ease-in-out;
 }
 
 div#circle-shape{
   position: absolute;
-  background: #ffa31a;  
+  background: #ca3e47;  
   border-radius: 75px;
   cursor: pointer;
   width: 300px;
   height: 300px;
-  transition: transform .5s ease-in-out;
+  transition: transform .7s ease-in-out;
+}
+
+div#circle-shape:hover{
+  background-color: #ff5560;
 }
 
 ul.protection-unordered{
@@ -286,12 +290,30 @@ li#strong-pass{
   transform: rotate(360deg);
 }
 
-.animation-scaleup{
+.animation-scaleup1{
+  animation: scaleup .5s ease-in-out forwards;
+}
+.animation-scaleup2{
+  animation: scaleup .6s ease-in-out forwards;
+}
+.animation-scaleup3{
   animation: scaleup .7s ease-in-out forwards;
 }
+.animation-scaleup4{
+  animation: scaleup .8s ease-in-out forwards;
+}
 
-.animation-scaledown{
+.animation-scaledown1{
   animation: scaledown .5s ease-in-out forwards;
+}
+.animation-scaledown2{
+  animation: scaledown .6s ease-in-out forwards;
+}
+.animation-scaledown3{
+  animation: scaledown .7s ease-in-out forwards;
+}
+.animation-scaledown4{
+  animation: scaledown .8s ease-in-out forwards;
 }
 
 @keyframes scaleup{
