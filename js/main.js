@@ -53,3 +53,22 @@ function doScrolling(elementY, duration) {
 	  }
 	})
   }
+
+//animates the lock from personal protection
+const lock = document.getElementById('circle-shape');
+const circle = document.querySelector("#circle-shape");
+const boxright = document.querySelector("#boxright-shape");
+const boxleft = document.querySelector("#boxleft-shape");
+const update_software = document.querySelector("#update-softwares");
+const twofa = document.querySelector("#twofa");
+const otp = document.querySelector("#otp");
+const strong_pass = document.querySelector("#strong-pass");
+lock.onclick = function(){
+	boxright.classList.toggle("move-right");
+	boxleft.classList.toggle("move-left");
+	circle.classList.toggle("move-left-circle");
+	update_software.classList.toggle("scaleup");
+	twofa.classList.toggle("scaleup");
+	otp.classList.toggle("scaleup");
+	strong_pass.classList.toggle("scaleup");
+};
