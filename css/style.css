@@ -275,7 +275,7 @@ li#strong-pass{
 }
 
 .move-left-circle{
-  transform: translateX(-55vw);
+  transform: translateX(-55vw) rotate(360deg);
 }
 
 .rotate{
