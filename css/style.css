@@ -1,3 +1,5 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +8,7 @@
  
 html {
   color: #ffffff;
-  font-family: "Helvetica";
+  font-family: "Montserrat";
   width: 100%;
   font-size: 10px;
 }
@@ -79,6 +81,8 @@ section {
   width: 80vw;
   font-size: 2rem;
 }
+
+/* Navigation Bar */
 .navbar {
   position: fixed;
   top: 0;
@@ -96,7 +100,14 @@ section {
   width: 100%;
   justify-content: center;
 }
-  
+
+.navbar line {
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  margin: 10px 0 0 0;
+  background: #FF1847;
+}
 .navbar ul li {
   margin: 0 1rem;
   padding: 1rem;
@@ -105,17 +116,84 @@ section {
 .navbar ul li a {
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 2rem;
+  display: block;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  font-size: 14px;
   color: #f4f4f4;
 }
   
 .navbar ul li a:hover {
   color: #ffa31a;
+  cursor: pointer;
+  border-bottom: 0.10rem solid orange;
 }
 
-#consequences{
-  background: url('https://www.spirion.com/wp-content/uploads/2020/11/DataSecurity-blog-image.png') no-repeat center center/cover;;
+/* Bullet */
+
+.bullet{
+  font-weight: bold;
+
 }
+/* Consequences  */
+
+
+.consequences-list {
+  display: inline-block;
+}
+
+dl {
+  counter-reset: count;
+  background: linear-gradient(90deg, rgba(252, 252, 252, 0.04) 20%, rgba(253, 198, 198, 0) 0%);
+  padding-left: 1vw;
+  padding-right: 4vw;
+  padding-top: 2rem;
+  margin: 0;
+  
+}
+@media (min-width: 768px) {
+  dl {
+    padding-left: 2vw;
+  }
+}
+@media (min-width: 1024px) {
+  dl {
+    padding-top: 4vw;
+    padding-bottom: 2vw;
+    
+  }
+}
+
+dl + dl {
+  counter-reset: counter 4;
+}
+
+dt {
+  counter-increment: count;
+  color: rgb(221, 175, 76);
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-indent: -1em;
+  list-style-position: outside;
+  margin-left: 2em;
+}
+
+dt::before {
+  content: counter(count, decimal-leading-zero) ".";
+  font-family: "Abril Fatface", cursive;
+  color: #ffa31a;
+  margin-left: -1vw;
+  padding-right: 12px;
+}
+
+dd {
+  margin-left: 5vw;
+  margin-bottom: 5vh;
+}
+
+
+/* Consequences End */
 
 /* Personal Protection Style */
 section#personalprotection{
