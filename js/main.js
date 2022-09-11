@@ -64,11 +64,31 @@ const twofa = document.querySelector("#twofa");
 const otp = document.querySelector("#otp");
 const strong_pass = document.querySelector("#strong-pass");
 lock.onclick = function(){
+	if(circle.className == "circle-shape move-left-circle"){
+		console.log("helo");
+		update_software.className = "";
+		twofa.className = "";
+		otp.className = "";
+		strong_pass.className = "";
+		update_software.classList.toggle("animation-scaledown");
+		twofa.classList.toggle("animation-scaledown");
+		otp.classList.toggle("animation-scaledown");
+		strong_pass.classList.toggle("animation-scaledown");
+	}else if(circle.className == "circle-shape"){
+		console.log("hehilo");
+		update_software.className = "";
+		twofa.className = "";
+		otp.className = "";
+		strong_pass.className = "";
+		update_software.classList.toggle("animation-scaleup");
+		twofa.classList.toggle("animation-scaleup");
+		otp.classList.toggle("animation-scaleup");
+		strong_pass.classList.toggle("animation-scaleup");
+	}
 	boxright.classList.toggle("move-right");
 	boxleft.classList.toggle("move-left");
 	circle.classList.toggle("move-left-circle");
-	update_software.classList.toggle("scaleup");
-	twofa.classList.toggle("scaleup");
-	otp.classList.toggle("scaleup");
-	strong_pass.classList.toggle("scaleup");
+	
+	
+	
 };
