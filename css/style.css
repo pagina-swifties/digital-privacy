@@ -131,7 +131,7 @@ section {
 .navbar ul li a:hover {
   color: #ca3e47;
   cursor: pointer;
-  border-bottom: 0.10rem solid orange;
+  border-bottom: 0.10rem solid #ca3e47;
 }
 
 /* Bullet */
@@ -141,7 +141,6 @@ section {
 
 }
 /* Consequences  */
-
 
 .consequences-list {
   display: inline-block;
@@ -200,6 +199,69 @@ dd {
 
 /* Consequences End */
 
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.card{
+  background: white;
+  color: #1b1b1b;
+  width: 470px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 15px 15px 0 0;
+
+}
+
+.card-image {
+  background-color: gray;
+  height: 370px;
+  margin-bottom: 95px;
+  background-size: cover;
+}
+
+.car-1 {
+  background-image: url('/images/cardimg1.jpg');
+}
+.car-2 {
+  background-image: url('/images/cardimg2.jpg');
+}
+.car-3 {
+  background-image: url('/images/cardimg3.png');
+}
+
+.card p {
+  padding: 10px;
+}
+
+.card a {
+  background-color: black;
+  color: white;
+  padding:15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+  text-decoration: none;
+}
+
+.card:hover {
+  background-color: rgb(210, 166, 34);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 1s ease;
+}
 /* Personal Protection Style */
 div#boxleft-shape{
   position: absolute;
