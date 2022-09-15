@@ -199,6 +199,72 @@ dd {
 
 /* Consequences End */
 
+/* Issues */
+input[name='panel'] {
+  display: none;
+}
+/* color scheme to be adjusted*/
+label {
+  display: block;
+  padding: 1rem 1.5rem;
+  margin-bottom: 3rem;
+  border-bottom: .5rem solid #FF1847;
+  border-radius: 2rem;
+  color: #FFF;
+  font-size: 4rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+label span{
+  background: #ca3e47;
+  padding: .5rem 1rem;
+  border-radius: 2rem;
+}
+
+label:hover {
+  background:#ecbcb4;
+  border-radius: 2rem;
+}
+
+.issue-content {
+  display: block;
+  padding: 0 1rem;
+  justify-content: center;
+  width: 100%;
+  background: #1b1b1b;
+}
+
+input[name='panel'] + .issue-content {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.5s ease;
+}
+
+input[name='panel']:checked + .issue-content {
+  overflow: auto;
+  height: 10rem;
+
+}
+
+.drop-down-arrow {
+  border: 0.5rem solid #954040;
+  border-width: 0 1rem 1rem 0;
+  align-items:right;
+  display: inline-block;
+  padding: 1rem;
+  position: absolute;
+  right: 20rem;
+
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* Issues end */
+
 *{
   box-sizing: border-box;
   padding: 0;
