@@ -265,6 +265,7 @@ input[name='panel']:checked + .issue-content {
 
 /* Issues end */
 
+/* Importance */
 *{
   box-sizing: border-box;
   padding: 0;
@@ -272,21 +273,26 @@ input[name='panel']:checked + .issue-content {
 }
 
 .container{
+
   display: flex;
+  align-items: center;
+  justify-content: center;
   justify-content: center;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   flex-wrap: wrap;
+
 }
 
 .card{
-  background: white;
+  background: #ca3e47;
   color: #1b1b1b;
   width: 470px;
   margin: 10px;
   text-align: center;
   border-radius: 15px 15px 0 0;
+  border: white;
 
 }
 
@@ -312,8 +318,8 @@ input[name='panel']:checked + .issue-content {
 }
 
 .card a {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: red;
   padding:15px 20px;
   display: block;
   text-align: center;
@@ -322,12 +328,14 @@ input[name='panel']:checked + .issue-content {
 }
 
 .card:hover {
-  background-color: rgb(210, 166, 34);
-  color: white;
+  background-color: white;
+  color: black; 
   cursor: pointer;
   transform: scale(1.03);
   transition: all 1s ease;
 }
+/*Importance End*/
+
 /* Personal Protection Style */
 div#boxleft-shape{
   position: absolute;
