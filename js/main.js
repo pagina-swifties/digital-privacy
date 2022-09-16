@@ -54,7 +54,8 @@ function doScrolling(elementY, duration) {
 	})
   }
 
-//animates the lock from personal protection
+//---animates the lock from personal protection---
+/*
 const lock = document.getElementById('circle-shape');
 const circle = document.querySelector("#circle-shape");
 const boxright = document.querySelector("#boxright-shape");
@@ -88,7 +89,5 @@ lock.onclick = function(){
 	boxright.classList.toggle("move-right");
 	boxleft.classList.toggle("move-left");
 	circle.classList.toggle("move-left-circle");
-	
-	
-	
 };
+*/
