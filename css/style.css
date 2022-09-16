@@ -222,7 +222,7 @@ div#eyeball{
   border-radius: 50%;
   height: 17rem;
   width: 17rem;
-  animation: eyemove 4s ease infinite;
+  animation: eyemove 6s ease infinite;
 }
 
 @keyframes eyemove {
@@ -246,8 +246,8 @@ div#eyeball{
     transform: translateX(-4rem) translateY(3em)
   }
 
-  100%{
-    transform: translateX(0) translateY(0)
+  90%{
+    transform: translateX(-4rem) translateY(3em)
   }
 }
 
