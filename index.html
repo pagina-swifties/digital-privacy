@@ -7,10 +7,13 @@
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/bebas" type="text/css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
-
     <title>Digital Privacy</title>
 </head>
 <body>
+    <div class="hamburger-menu">
+        <input type="checkbox" id="menu_toggle">
+        <label for="menu_toggle" class="menu_btn"><span></span></label>
+    </div>
     <nav class="navbar">
         <ul>
             <li><a href = "#home"> Home </li>
@@ -86,8 +89,7 @@
                     <dd><span class = "bullet">Damages: </span>125GB of sensitive data was posted via a torrent link on the anonymous forum 4chan.</dd>                    
                     <dd><span class = "bullet">Summary: </span>Twitch, an Amazon-owned company, had almost its entire code base compromised. The exact impact of the 
                         incidents has yet to be determined, but given the depth of compromise, it has the potential to affect all Twitch users. The security vulnerability 
-                        that enabled the breach was a server configuration change that allowed unauthorized access by third parties. This has now been resolved.  </dd>  
-
+                        that enabled the breach was a server configuration change that allowed unauthorized access by third parties. This has now been resolved.</dd>
                 </dl>
             </div>
 
@@ -120,8 +122,6 @@
             </div>
     </section>
 
-
-
     <section id="definition">
         <div class="section-heading"><span class="highlight"> Digital Privacy</span></div>
         <div class="section-content">Protection of an individual's information used or created using the internet defines digital privacy. Privacy incorporates two crucial elements-- our state of being alone and not being watched or interrupted by others.
@@ -142,8 +142,7 @@
             
             <strong><i>Cybercriminals</i></strong> can access and violate users' data as they can make a profit by getting their passwords to different accounts or using it as blackmail to get money from victims. Cybercriminals can also sell stolen data on the black market across most countries.
             <p></p>
-            <br>
-            <br>
+            <br><br>
             <h2>Benefits of Privacy Protection</h2>
             <section class="container">
                 <div class="card">
@@ -189,7 +188,7 @@
             <br>
             <br>
 
-            <label for="panel_1">A. SPYING AND <span>SNOOPING</span><i class="drop-down-arrow down"></i></label>
+            <label class="issues-label" for="panel_1">A. SPYING AND <span>SNOOPING</span><i class="drop-down-arrow down"></i></label>
             <input type="checkbox" name="panel" id="panel_1">
             <div class="issue-content">
                 <p>On the internet there are things called “cookies”. Cookies can track multiple visits to the same site
@@ -202,7 +201,7 @@
                 </p>
             </div>
 
-            <label for="panel_2">B. INFORMATION <span>MISHANDLING</span><i class="drop-down-arrow down"></i></label>
+            <label class="issues-label"  for="panel_2">B. INFORMATION <span>MISHANDLING</span><i class="drop-down-arrow down"></i></label>
             <input type="checkbox" name="panel" id="panel_2">
             <div class="issue-content">
                 <p>As mentioned in above cookies mostly are used in advertisements but there are some internet sites
