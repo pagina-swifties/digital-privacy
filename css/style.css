@@ -101,7 +101,12 @@ body {
 }
 
 /* Hamburger Menu */
+.hamburger-menu {
+  width: 100%;
+}
+
 #menu_toggle {
+  position: fixed;
   opacity: 0;
 }
 
@@ -119,20 +124,23 @@ body {
   transform: rotate(90deg);
 }
 
-#menu_toggle:checked ~ .menu_box {
-  top: 0 !important;
+#menu_toggle:checked ~ .navbar {
+  display: flex;
+  left: 0;
+  animation: slide-left 150ms;
 }
 
 
 .menu_btn {
+  display: none;
   position: fixed;
   margin: 2rem;
   top: 2rem;
-  right: 2rem;
+  left: 2rem;
   width: 3rem;
   height: 3rem;
   cursor: pointer;
-  z-index: 1;
+  z-index: 100;
 }
 
 .menu_btn > span,
@@ -145,15 +153,16 @@ body {
   background-color: white;
   transition-duration: .25s;
 }
+
 .menu_btn > span::before {
   content: '';
   top: -10px;
 }
+
 .menu_btn > span::after {
   content: '';
   top: 10px;
 }
-
 
 section {
   display: flex;
@@ -161,6 +170,7 @@ section {
   align-items: center;
   padding: 5rem;
   width: 100vw;
+  
   /*Testing only remove if necessary */
   justify-content: center;
   text-align: start;
@@ -200,7 +210,6 @@ section {
 /* Navigation Bar */
 .navbar {
   position: fixed;
-  top: 0;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -265,18 +274,6 @@ dl {
   padding-top: 2rem;
   margin: 0;
   
-}
-@media (min-width: 768px) {
-  dl {
-    padding-left: 2vw;
-  }
-}
-@media (min-width: 1024px) {
-  dl {
-    padding-top: 4vw;
-    padding-bottom: 2vw;
-    
-  }
 }
 
 dl + dl {
@@ -396,7 +393,6 @@ input[name='panel'] {
   padding: 0 1rem;
   justify-content: center;
   width: 100%;
-  background: #1b1b1b;
 }
 
 input[name='panel'] + .issue-content {
@@ -437,16 +433,15 @@ input[name='panel']:checked + .issue-content {
 }
 
 .container{
-
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
   justify-content: center;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   flex-wrap: wrap;
-
+  width: 100%;
 }
 
 .card{
@@ -455,7 +450,7 @@ input[name='panel']:checked + .issue-content {
   width: 470px;
   margin: 10px;
   text-align: center;
-  border-radius: 15px 15px 0 0;
+  border-radius: 15px;
   border: white;
 
 }
@@ -465,6 +460,7 @@ input[name='panel']:checked + .issue-content {
   height: 370px;
   margin-bottom: 95px;
   background-size: cover;
+  border-radius: 15px 15px 0 0;
 }
 
 .car-1 {
@@ -692,12 +688,42 @@ footer p {
 
 /* Devices from 993px to 1200px (inclusive) */
 @media (max-width: 1200px) {
+  .menu_btn {
+    display: block;
+  }
+
   .navbar {
-    display: none
+    position: fixed;
+    background: rgba(0,0,0,0.90);
+    left: -50vw;
+    height: 100vh;
+    width: fit-content;
+    animation: slide-right 150ms;
+  }
+
+  .navbar ul {
+    display: flex;
+    gap: 2rem;
+    margin-left: 2rem;
+    flex-direction: column;
+  }
+
+  .navbar ul li a {
+    font-size: 2rem;
+  }
+
+  .navbar ul li a:hover {
+    text-shadow: 0.1rem 0.1rem #05d9e8;
   }
 
   .protection-unordered {
     flex-direction: column;
+  }
+
+  dl {
+    padding-top: 4vw;
+    padding-bottom: 2vw;
+    
   }
 }
 
@@ -707,7 +733,9 @@ footer p {
 }
 /* Devices from 0px to 768px (inclusive) */
 @media (max-width: 768px) {
-
+  dl {
+    padding-left: 2vw;
+  }
 }
 
 
@@ -741,3 +769,26 @@ footer p {
       -0.04em -0.025em 0 #d1f7ff;
   }
 }
+
+@keyframes slide-left {
+  0% {
+    left: -50vw;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    display: flex;
+    left: 0;
+  }
+
+  100% {
+    display: none;
+    left: -50vw;
+  }
+}
+
