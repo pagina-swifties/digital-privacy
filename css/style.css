@@ -33,6 +33,7 @@ body {
   background-repeat: no-repeat, repeat;
   background-position: right center;
   background-size:contain;
+  background-attachment: fixed;
 
 }
  
@@ -56,6 +57,12 @@ body {
   color: #1b1b1b;
   padding: 1rem 5rem;
 
+}
+
+#databreach{
+  background-color: #d1f7ff;
+  color: #01012b;
+  opacity: 0.8;
 }
 
 .highlight {
@@ -116,6 +123,7 @@ body {
   top: 0 !important;
 }
 
+
 .menu_btn {
   position: fixed;
   margin: 2rem;
@@ -168,17 +176,27 @@ section {
   margin-bottom: 2rem;
   font-family: 'BebasNeueRegular';
   font-weight: normal;
-  font-style: normal;
+  font-style: normal; 
 }
+
 
 .section-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 80vw;
-  font-size: 2rem;
+  font-size: 2.1rem;
 }
 
+.section-highlight{
+  flex-direction: column; 
+  align-items: center;
+  width: 80vw;
+  font-size: 4rem;
+  border-style: dashed;
+  padding: 2rem 2rem;
+  border:medium dashed  #ff2a6d;
+}
 /* Navigation Bar */
 .navbar {
   position: fixed;
@@ -235,10 +253,11 @@ section {
 /* Consequences  */
 
 .consequences-list {
-  display: inline-block;
+  display:block;
 }
 
 dl {
+  columns: 2;
   counter-reset: count;
   background: linear-gradient(90deg, rgba(252, 252, 252, 0.04) 20%, rgba(253, 198, 198, 0) 0%);
   padding-left: 1vw;
@@ -273,6 +292,7 @@ dt {
   text-indent: -1em;
   list-style-position: outside;
   margin-left: 2em;
+  margin-bottom: 0.5em;
 }
 
 dt::before {
