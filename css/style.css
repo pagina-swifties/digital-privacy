@@ -800,6 +800,21 @@ footer p {
   .glitch{
     font-size: -0.5em;
   }
+  .issues-label {
+    font-size: 2.5rem;
+    border-bottom: .5rem solid #4c97e2;
+    color: #ff2a6d;
+    
+  }
+  .drop-down-arrow {
+    border: 0.5rem solid #ff2a6d;
+    border-width: 0 1rem 1rem 0;
+    align-items:right;
+    display: inline-block;
+    padding: 1rem;
+    position: absolute;
+    right: 3em;
+  }
 
   dl {
     padding-top: 4vw;
