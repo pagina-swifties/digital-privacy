@@ -322,7 +322,21 @@ dd {
   margin-left: 5vw;
   margin-bottom: 5vh;
 }
+#last-bullet{
+  margin-bottom: -15vh;
+}
 /* Consequences End */
+
+a:link{
+  color:#f07dea;
+}
+a:visited{
+  color: #a460ed
+}
+
+a:hover{
+  color:#ff2a4d;
+}
 
 /* moving eyes */
 #eyelids{
@@ -788,11 +802,14 @@ footer p {
     color: #ff2a6d;
     font-size: 10rem;
     display: inline-block;
+    /* text-align: center; */
   }
   .glitch{
     font-size: 10rem;
   }
-
+  #last-bullet{
+    margin-bottom: -10vh;
+  }
   /*  importance of digital privacy */
   .card{
     background-color:  #f07dea;
@@ -803,7 +820,7 @@ footer p {
 
   .navbar {
     position: left;
-    background: #9fc9f3;
+    background: #c7afe0;
     left: -50rem;
     height: 100vh;
     width: fit-content;
@@ -820,10 +837,16 @@ footer p {
   .navbar ul li a {
     font-size: 2rem;
   }
-
+  .navbar line {
+    background: #4c97e2;
+  }
   .navbar ul li a:hover {
+    color: #05d9e8;
+    cursor: pointer;
+    text-decoration: underline #ff2a6d; 
     text-shadow: 0.1rem 0.1rem #05d9e8;
   }
+
 
   .protection-unordered {
     flex-direction: column;
@@ -837,9 +860,24 @@ footer p {
 }
 
 /* Devices from 0px to 768px (inclusive) */
-@media (max-width: 721px) {
+@media (max-width: 768px) {
   .glitch{
     font-size: -0.5em;
+  }
+  .issues-label {
+    font-size: 2.5rem;
+    border-bottom: .5rem solid #4c97e2;
+    color: #ff2a6d;
+    
+  }
+  .drop-down-arrow {
+    border: 0.5rem solid #ff2a6d;
+    border-width: 0 1rem 1rem 0;
+    align-items:right;
+    display: inline-block;
+    padding: 1rem;
+    position: absolute;
+    right: 3em;
   }
 
   dl {
