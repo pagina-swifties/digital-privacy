@@ -62,11 +62,6 @@ body {
 
 }
 
-#databreach{
-  background-color: #d1f7ff;
-  color: #01012b;
-  opacity: 0.8;
-}
 
 .highlight {
   color: #ff2a4d;
@@ -183,6 +178,12 @@ section {
   scroll-snap-align: center;
 }
 
+body > section:nth-of-type(2n){
+  background-color: #d1f7ff;
+  color: #01012b;
+  opacity: 0.8;
+}
+
 .section-heading {
   text-align: center;
   font-size: 6rem;
@@ -208,7 +209,8 @@ section {
   font-size: 4rem;
   border-style: dashed;
   padding: 2rem 2rem;
-  border:medium dashed  #ff2a6d;
+  border:medium dashed  #05d0e8;
+  margin: 5rem;
 }
 /* Navigation Bar */
 .navbar {
