@@ -26,9 +26,9 @@ body {
 #home { 
   display: flex;
   align-items: normal;
-  justify-content: center;
   height: 100vh;
   width: 100vw;
+  padding: 0;
   background-image: url(../images/home-media.png);
   background-repeat: no-repeat, repeat;
   background-position: right center;
@@ -36,20 +36,24 @@ body {
 }
  
 #tagline-wrapper {
-  align-content: flex-start;
-  place-items: left;  
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
   padding: 5rem;
+  position: relative;
+  height: 80%;
+  top: -10%;
 }
  
 #tagline {
-  text-align: left;
   font-size: 10em;
   font-weight: 700;
   line-height: 20rem;
+  width: 100%;
   cursor: default;
   color: #01012b;
   -webkit-text-stroke: 1px #ff2a6d;
-
   /* testing text stroke */
 }
  
@@ -94,6 +98,38 @@ body {
   clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
   transform: translate(0.04em, 0.03em);
   opacity: 0.75;
+}
+
+.statistics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ff2a6d;
+  width: 100vw;
+}
+
+.statistic {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #01012b;
+  display: flex;
+  height: 11.5rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #01012b;
+}
+
+.statistic p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0 5rem;
+}
+
+.statistic span {
+  font-size: 3rem;
+  font-weight: 700;
+  padding-right: 5rem;
 }
 
 /* Hamburger Menu */
@@ -169,7 +205,6 @@ section {
   /*Testing only remove if necessary */
   justify-content: center;
   text-align: start;
-  min-height: 100vh;
   
   /* Scroll Snap */
   scroll-snap-align: center;
@@ -290,7 +325,7 @@ dd {
 /* Consequences End */
 
 /* moving eyes */
-div#eyelids{
+#eyelids{
   background: #1b1b1b;
   border: #313131 solid 3rem;
   border-radius: 75rem 0;
@@ -301,12 +336,13 @@ div#eyelids{
   overflow: hidden;
   rotate: 25deg;
   position: fixed;
+  margin-left: 20rem;
   width: 50rem;
   height: 45rem;
   z-index: -1;
 }
 
-div#eyeball{
+#eyeball{
   position: fixed;
   background: rgb(143, 64, 64);
   border: grey solid;
@@ -671,11 +707,24 @@ footer p {
 
 /* Devices from 993px to 1200px (inclusive) */
 @media (max-width: 1200px) {
-  #home{
+  #home {
     background-image: none;
+    height: unset;
   }
-  
-  
+
+  #tagline-wrapper {
+    top: -10vh;
+    height: 85vh;
+  }
+
+  .statistics {
+    flex-direction: column;
+  }
+
+  .statistic {
+    flex-direction: column;
+  }
+
   html {
     color: #01012b;
     font-family: "Montserrat";
@@ -802,7 +851,6 @@ footer p {
 
 
 @keyframes glitch {
- 
   0% {
     text-shadow: 0.05em 0 0 #05d9e8, -0.03em -0.04em 0 #ff2a6d,
       0.025em 0.04em 0 #d1f7ff;
