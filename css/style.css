@@ -49,6 +49,7 @@ body {
   cursor: default;
   color: #01012b;
   -webkit-text-stroke: 1px #ff2a6d;
+
   /* testing text stroke */
 }
  
@@ -624,7 +625,7 @@ li#strong-pass{
 footer {
   width: 100%;
   text-align: center;
-  border-top: 2px solid black;
+  border-top: 2px solid #ff2a4d;
   padding: 2rem 0;
   position: relative;
   left: 0;
@@ -700,6 +701,7 @@ footer p {
 
   #tagline{
     color: #ff2a6d;
+    font-size: 10rem;
   }
 
   .card{
