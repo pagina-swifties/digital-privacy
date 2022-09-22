@@ -40,9 +40,9 @@ body::before {
 #home { 
   display: flex;
   align-items: normal;
-  justify-content: center;
   height: 100vh;
   width: 100vw;
+  padding: 0;
   background-image: url(../images/home-media.png);
   background-repeat: no-repeat, repeat;
   background-position: right center;
@@ -52,16 +52,21 @@ body::before {
 }
  
 #tagline-wrapper {
-  align-content: flex-start;
-  place-items: left;  
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
   padding: 5rem;
+  position: relative;
+  height: 80%;
+  top: -10%;
 }
  
 #tagline {
-  text-align: left;
-  font-size: 10rem;
+  font-size: 10em;
   font-weight: 700;
   line-height: 20rem;
+  width: 100%;
   cursor: default;
   color: white;
   opacity: 1;
@@ -111,6 +116,38 @@ body::before {
   clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
   transform: translate(0.04em, 0.03em);
   opacity: 0.75;
+}
+
+.statistics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ff2a6d;
+  width: 100vw;
+}
+
+.statistic {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #01012b;
+  display: flex;
+  height: 11.5rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #01012b;
+}
+
+.statistic p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0 5rem;
+}
+
+.statistic span {
+  font-size: 3rem;
+  font-weight: 700;
+  padding-right: 5rem;
 }
 
 /* Hamburger Menu */
@@ -187,7 +224,6 @@ section {
   /*Testing only remove if necessary */
   justify-content: center;
   text-align: start;
-  min-height: 100vh;
   
   /* Scroll Snap */
   scroll-snap-align: center;
@@ -387,10 +423,24 @@ dd {
   margin-left: 5vw;
   margin-bottom: 5vh;
 }
+#last-bullet{
+  margin-bottom: -15vh;
+}
 /* Consequences End */
 
+a:link{
+  color:#f07dea;
+}
+a:visited{
+  color: #a460ed
+}
+
+a:hover{
+  color:#ff2a4d;
+}
+
 /* moving eyes */
-div#eyelids{
+#eyelids{
   background: #1b1b1b;
   border: #313131 solid 3rem;
   border-radius: 75rem 0;
@@ -401,12 +451,13 @@ div#eyelids{
   overflow: hidden;
   rotate: 25deg;
   position: fixed;
+  margin-left: 20rem;
   width: 50rem;
   height: 45rem;
   z-index: -1;
 }
 
-div#eyeball{
+#eyeball{
   position: fixed;
   background: rgb(143, 64, 64);
   border: grey solid;
@@ -541,7 +592,7 @@ input[name='panel']:checked + .issue-content {
 .card-image {
   background-color: gray;
   height: 370px;
-  margin-bottom: 95px;
+  margin-bottom: 2rem;
   background-size: cover;
   border-radius: 15px 15px 0 0;
 }
@@ -725,7 +776,7 @@ li#strong-pass{
 footer {
   width: 100%;
   text-align: center;
-  border-top: 2px solid black;
+  border-top: 2px solid #ff2a4d;
   padding: 2rem 0;
   position: relative;
   left: 0;
@@ -771,6 +822,37 @@ footer p {
 
 /* Devices from 993px to 1200px (inclusive) */
 @media (max-width: 1200px) {
+  #home {
+    background-image: none;
+    height: unset;
+  }
+
+  #tagline-wrapper {
+    height: 85vh;
+    text-align: center;
+  }
+
+  .glitch {
+    position: relative;
+  }
+
+  .statistics {
+    flex-direction: column;
+  }
+
+  .statistic {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 5rem;
+  }
+
+  .statistic p {
+    padding: unset;
+  }
+
 
   html {
     color: #01012b;
@@ -787,6 +869,12 @@ footer p {
     justify-content: center;
     overflow-x: hidden;
   }
+
+  .highlight {
+    color: #ff2a6d;
+  }
+
+/* hIghlights */
   dt::before {
     color: #ff2a6d;
   }
@@ -795,14 +883,49 @@ footer p {
     font-weight: bold;
   }
 
-  .highlight {
+/* issues dropdown */
+  .issues-label {
+    font-size: 3rem;
+    border-bottom: .5rem solid #4c97e2;
     color: #ff2a6d;
+    
+  }
+  
+  .issues-label span{
+    background: #4c97e2;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+  }
+  
+  .issues-label:hover {
+    background:#ecbcb4;
+    border-radius: 2rem;
   }
 
+  .drop-down-arrow {
+    border: 0.5rem solid #ff2a6d;
+    border-width: 0 1rem 1rem 0;
+    align-items:right;
+    display: inline-block;
+    padding: 1rem;
+    position: absolute;
+    right: 5em;
+  }
+
+/* home tagline */
   #tagline{
     color: #ff2a6d;
+    font-size: 10rem;
+    display: inline-block;
+    /* text-align: center; */
   }
-
+  .glitch{
+    font-size: 10rem;
+  }
+  #last-bullet{
+    margin-bottom: -10vh;
+  }
+  /*  importance of digital privacy */
   .card{
     background-color:  #f07dea;
   }
@@ -812,7 +935,7 @@ footer p {
 
   .navbar {
     position: left;
-    background: rgba(0,0,0,0.90);
+    background: #c7afe0;
     left: -50rem;
     height: 100vh;
     width: fit-content;
@@ -829,10 +952,16 @@ footer p {
   .navbar ul li a {
     font-size: 2rem;
   }
-
+  .navbar line {
+    background: #4c97e2;
+  }
   .navbar ul li a:hover {
+    color: #05d9e8;
+    cursor: pointer;
+    text-decoration: underline #ff2a6d; 
     text-shadow: 0.1rem 0.1rem #05d9e8;
   }
+
 
   .protection-unordered {
     flex-direction: column;
@@ -847,7 +976,25 @@ footer p {
 
 /* Devices from 0px to 768px (inclusive) */
 @media (max-width: 768px) {
-  
+  .glitch{
+    font-size: -0.5em;
+  }
+  .issues-label {
+    font-size: 2.5rem;
+    border-bottom: .5rem solid #4c97e2;
+    color: #ff2a6d;
+    
+  }
+  .drop-down-arrow {
+    border: 0.5rem solid #ff2a6d;
+    border-width: 0 1rem 1rem 0;
+    align-items:right;
+    display: inline-block;
+    padding: 1rem;
+    position: absolute;
+    right: 3em;
+  }
+
   dl {
     padding-top: 4vw;
     padding-bottom: 2vw;
@@ -857,7 +1004,6 @@ footer p {
 
 
 @keyframes glitch {
- 
   0% {
     text-shadow: 0.05em 0 0 #05d9e8, -0.03em -0.04em 0 #ff2a6d,
       0.025em 0.04em 0 #d1f7ff;
