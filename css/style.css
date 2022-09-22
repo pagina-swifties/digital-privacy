@@ -671,7 +671,11 @@ footer p {
 
 /* Devices from 993px to 1200px (inclusive) */
 @media (max-width: 1200px) {
-
+  #home{
+    background-image: none;
+  }
+  
+  
   html {
     color: #01012b;
     font-family: "Montserrat";
@@ -750,7 +754,7 @@ footer p {
 
   .navbar {
     position: left;
-    background: rgba(0,0,0,0.90);
+    background: #9fc9f3;
     left: -50rem;
     height: 100vh;
     width: fit-content;
