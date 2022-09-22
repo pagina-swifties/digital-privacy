@@ -740,8 +740,18 @@ footer p {
   }
 
   .statistic {
+    width: 100%;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 5rem;
   }
+
+  .statistic p {
+    padding: unset;
+  }
+
 
   html {
     color: #01012b;
