@@ -231,7 +231,7 @@ section {
 .navbar ul li a:hover {
   color: #ff2a4d;
   cursor: pointer;
-  border-bottom: 0.10rem solid #ff2a4d;
+  text-decoration: underline red; 
 }
 
 /* Bullet */
