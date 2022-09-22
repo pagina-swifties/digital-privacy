@@ -289,6 +289,7 @@ dd {
 }
 /* Consequences End */
 
+
 /* moving eyes */
 div#eyelids{
   background: #1b1b1b;
@@ -739,6 +740,7 @@ footer p {
     color: #ff2a6d;
     font-size: 10rem;
     display: inline-block;
+    /* text-align: center; */
   }
   .glitch{
     font-size: 10rem;
@@ -754,7 +756,7 @@ footer p {
 
   .navbar {
     position: left;
-    background: #9fc9f3;
+    background: #c7afe0;
     left: -50rem;
     height: 100vh;
     width: fit-content;
@@ -771,10 +773,16 @@ footer p {
   .navbar ul li a {
     font-size: 2rem;
   }
-
+  .navbar line {
+    background: #4c97e2;
+  }
   .navbar ul li a:hover {
+    color: #05d9e8;
+    cursor: pointer;
+    text-decoration: underline #ff2a6d; 
     text-shadow: 0.1rem 0.1rem #05d9e8;
   }
+
 
   .protection-unordered {
     flex-direction: column;
@@ -788,7 +796,7 @@ footer p {
 }
 
 /* Devices from 0px to 768px (inclusive) */
-@media (max-width: 721px) {
+@media (max-width: 768px) {
   .glitch{
     font-size: -0.5em;
   }
