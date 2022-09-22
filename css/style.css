@@ -65,7 +65,7 @@ body {
   font-size: 15rem;
   font-weight: bold;
   text-transform: uppercase;
-  position: relative;
+  position: absolute;
   text-shadow: 0.05em 0 0 #05d0e8, -0.03em -0.04em 0 #ff2a6d,
     0.025em 0.04em 0 #d1f7ff;
   animation: glitch 725ms infinite;
@@ -719,6 +719,7 @@ footer p {
 
 
 @keyframes glitch {
+ 
   0% {
     text-shadow: 0.05em 0 0 #05d9e8, -0.03em -0.04em 0 #ff2a6d,
       0.025em 0.04em 0 #d1f7ff;
