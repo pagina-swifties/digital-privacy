@@ -43,7 +43,7 @@ body {
  
 #tagline {
   text-align: left;
-  font-size: 10rem;
+  font-size: 10em;
   font-weight: 700;
   line-height: 20rem;
   cursor: default;
@@ -687,6 +687,12 @@ footer p {
     justify-content: center;
     overflow-x: hidden;
   }
+
+  .highlight {
+    color: #ff2a6d;
+  }
+
+/* hIghlights */
   dt::before {
     color: #ff2a6d;
   }
@@ -695,15 +701,46 @@ footer p {
     font-weight: bold;
   }
 
-  .highlight {
+/* issues dropdown */
+  .issues-label {
+    font-size: 3rem;
+    border-bottom: .5rem solid #4c97e2;
     color: #ff2a6d;
+    
+  }
+  
+  .issues-label span{
+    background: #4c97e2;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+  }
+  
+  .issues-label:hover {
+    background:#ecbcb4;
+    border-radius: 2rem;
   }
 
+  .drop-down-arrow {
+    border: 0.5rem solid #ff2a6d;
+    border-width: 0 1rem 1rem 0;
+    align-items:right;
+    display: inline-block;
+    padding: 1rem;
+    position: absolute;
+    right: 5em;
+  }
+
+/* home tagline */
   #tagline{
     color: #ff2a6d;
     font-size: 10rem;
+    display: inline-block;
+  }
+  .glitch{
+    font-size: 10rem;
   }
 
+  /*  importance of digital privacy */
   .card{
     background-color:  #f07dea;
   }
@@ -747,8 +784,11 @@ footer p {
 }
 
 /* Devices from 0px to 768px (inclusive) */
-@media (max-width: 768px) {
-  
+@media (max-width: 721px) {
+  .glitch{
+    font-size: -0.5em;
+  }
+
   dl {
     padding-top: 4vw;
     padding-bottom: 2vw;
