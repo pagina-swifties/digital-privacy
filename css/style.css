@@ -287,8 +287,21 @@ dd {
   margin-left: 5vw;
   margin-bottom: 5vh;
 }
+#last-bullet{
+  margin-bottom: -15vh;
+}
 /* Consequences End */
 
+a:link{
+  color:#f07dea;
+}
+a:visited{
+  color: #a460ed
+}
+
+a:hover{
+  color:#ff2a4d;
+}
 
 /* moving eyes */
 div#eyelids{
@@ -745,7 +758,9 @@ footer p {
   .glitch{
     font-size: 10rem;
   }
-
+  #last-bullet{
+    margin-bottom: -10vh;
+  }
   /*  importance of digital privacy */
   .card{
     background-color:  #f07dea;
