@@ -442,7 +442,7 @@ input[name='panel']:checked + .issue-content {
 .card-image {
   background-color: gray;
   height: 370px;
-  margin-bottom: 95px;
+  margin-bottom: 2rem;
   background-size: cover;
   border-radius: 15px 15px 0 0;
 }
