@@ -727,8 +727,12 @@ footer p {
   }
 
   #tagline-wrapper {
-    top: -10vh;
     height: 85vh;
+    text-align: center;
+  }
+
+  .glitch {
+    position: relative;
   }
 
   .statistics {
