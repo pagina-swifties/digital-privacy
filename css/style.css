@@ -509,7 +509,7 @@ input[name='panel'] {
   margin-bottom: 3rem;
   border-bottom: .5rem solid #FF1847;
   border-radius: 2rem;
-  color: #FFF;
+  color: #01012b;
   font-size: 4rem;
   width: 100%;
   cursor: pointer;
@@ -517,6 +517,7 @@ input[name='panel'] {
 
 .issues-label span{
   background: #ff2a4d;
+  color:#ffffff;
   padding: .5rem 1rem;
   border-radius: 2rem;
 }
