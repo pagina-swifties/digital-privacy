@@ -349,6 +349,17 @@ body > section:nth-of-type(2n){
   height: 60px;
   background: rgba(0,0,0,0.7);
 }
+
+.navbar span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-left: 2rem;
+  font-size: 2.5rem;
+}
+
+.navbar span:hover {
+  cursor: default;
+}
   
 .navbar ul {
   display: flex;
@@ -451,32 +462,58 @@ a:hover{
 }
 
 /* moving eyes */
-#eyelids{
+#eyelids-desktop {
   background: #1b1b1b;
-  border: #313131 solid 3rem;
-  border-radius: 75rem 0;
+  border: #313131 solid 0.3rem;
+  border-radius: 7.5rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 15%;
+  opacity: 100%;
   overflow: hidden;
   rotate: 25deg;
   position: fixed;
-  margin-left: 20rem;
-  width: 50rem;
-  height: 45rem;
-  z-index: -1;
+  margin-right: 5rem;
+  right: 0;
+  width: 5rem;
+  height: 4.5rem;
+  z-index: 9999;
 }
 
-#eyeball{
+#eyeball-desktop {
   position: fixed;
   background: rgb(143, 64, 64);
   border: grey solid;
-  border-width: 4rem;
+  border-width: 0.4rem;
   border-radius: 50%;
-  height: 17rem;
-  width: 17rem;
+  height: 1.7rem;
+  width: 1.7rem;
   animation: eyemove 6s ease infinite;
+}
+
+#eyelids-mobile {
+  background: #1b1b1b;
+  border: #313131 solid 1.5rem;
+  border-radius: 37.5rem 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  rotate: 12.5deg;
+  width: 25rem;
+  height: 22.5rem;
+  z-index: unset;
+}
+
+#eyeball-mobile {
+  position: fixed;
+  background: rgb(143, 64, 64);
+  border: grey solid;
+  border-width: 2rem;
+  border-radius: 50%;
+  height: 8.5rem;
+  width: 8.5rem;
+  animation: eyemoveMobile 6s ease infinite;
 }
 
 @keyframes eyemove {
@@ -485,11 +522,11 @@ a:hover{
   }
 
   20%{
-    transform: translateX(7rem) translateY(-6rem)
+    transform: translateX(0.7rem) translateY(-0.6rem)
   }
 
   40%{
-    transform: translateX(7rem) translateY(-6rem)
+    transform: translateX(0.7rem) translateY(-0.6rem)
   }
 
   60%{
@@ -497,11 +534,11 @@ a:hover{
   }
 
   80%{
-    transform: translateX(-4rem) translateY(3em)
+    transform: translateX(-0.4rem) translateY(0.3em)
   }
 
   90%{
-    transform: translateX(-4rem) translateY(3em)
+    transform: translateX(-0.4rem) translateY(0.3em)
   }
 }
 
@@ -739,6 +776,7 @@ footer p {
   }
 
   #tagline-wrapper {
+    flex-direction: column;
     height: 85vh;
     text-align: center;
   }
@@ -746,6 +784,14 @@ footer p {
   #definition .section-content img {
     width: 40%;
     margin-right: 5rem;
+  }
+
+  #eyelids-desktop {
+    display: none;
+  }
+
+  #eyelids-mobile {
+    display: flex;
   }
 
   .glitch {
@@ -855,6 +901,10 @@ footer p {
     height: 100vh;
     width: fit-content;
     animation: slide-right 150ms;
+  }
+
+  .navbar span {
+    display: none;
   }
 
   .navbar ul {
@@ -1053,6 +1103,32 @@ ul.protection-unordered{
   100% {
     display: none;
     left: -50vw;
+  }
+}
+
+@keyframes eyemoveMobile {
+  0%{
+    transform: translateX(0) translateY(0)
+  }
+
+  20%{
+    transform: translateX(7rem) translateY(-6rem)
+  }
+
+  40%{
+    transform: translateX(7rem) translateY(-6rem)
+  }
+
+  60%{
+    transform: translateX(0) translateY(0)
+  }
+
+  80%{
+    transform: translateX(-4rem) translateY(3em)
+  }
+
+  90%{
+    transform: translateX(-4rem) translateY(3em)
   }
 }
 
