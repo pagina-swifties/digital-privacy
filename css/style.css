@@ -949,7 +949,7 @@ footer p {
 /* Ways to protect */
 ul.protection-unordered{
   display: flex;
-  font-size: 1.1rem;
+  font-size: 1.7rem;
 }
 
 .protection-unordered li{
@@ -957,7 +957,7 @@ ul.protection-unordered{
   border-width:2px;
   border-style: solid;
   display: grid;
-  height: 23rem;
+  height: 50rem;
   margin: .5rem;
   margin-left: 1rem;
   padding: 2rem;
