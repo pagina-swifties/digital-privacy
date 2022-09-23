@@ -976,6 +976,33 @@ footer p {
 
 /* Devices from 0px to 768px (inclusive) */
 @media (max-width: 768px) {
+/* Bullets for Effects of Data Breach */
+  dl {
+    columns: 1;
+  }
+
+  dt {
+    color: #05d0e8;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+
+  }
+  
+  dt::before {
+    margin-left: -1vw;
+    padding-right: px;
+  }
+  
+  dd {
+    font-size: 2rem;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+  }
+
+
+
+
+
   .glitch{
     font-size: -0.5em;
   }
