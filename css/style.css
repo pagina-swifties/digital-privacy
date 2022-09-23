@@ -252,6 +252,7 @@ body > section:nth-of-type(2n){
   width: 80vw;
   font-size: 2.1rem;
 }
+
 .card-wrapper{
   display: flex;
   flex-direction: row;
@@ -373,13 +374,12 @@ body > section:nth-of-type(2n){
 }
 
 /* Bullet */
-
 .bullet{
   font-weight: bold;
 
 }
-/* Consequences  */
 
+/* Consequences Start*/
 .consequences-list {
   display:block;
 }
@@ -423,6 +423,7 @@ dd {
   margin-left: 5vw;
   margin-bottom: 5vh;
 }
+
 #last-bullet{
   margin-bottom: -15vh;
 }
@@ -439,7 +440,7 @@ a:hover{
   color:#ff2a4d;
 }
 
-/* moving eyes */
+/* Moving eyes */
 #eyelids{
   background: #1b1b1b;
   border: #313131 solid 3rem;
@@ -808,23 +809,24 @@ footer p {
   align-items: start;
 }
 
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 #ff2a4d;
-  }
-  70% {
-    box-shadow: 0 0 0 2rem rgba(115, 138, 144, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(115, 138, 144, 0);
-  }
-}
-
 /* Devices from 993px to 1200px (inclusive) */
 @media (max-width: 1200px) {
+  html {
+    color: #01012b;
+  }
+
+  body {
+    background: #eeee;
+  }
+
+  .section-content {
+    font-size: 1.6rem;
+  }
+
   #home {
     background-image: none;
     height: unset;
+    min-height: 100vh;
   }
 
   #tagline-wrapper {
@@ -853,37 +855,27 @@ footer p {
     padding: unset;
   }
 
-
-  html {
-    color: #01012b;
-    font-family: "Montserrat";
-    width: 100%;
-    font-size: 10px;
-    scroll-behavior: smooth;
-  }
-
-  body {
-    background: #eeee;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow-x: hidden;
-  }
-
   .highlight {
     color: #ff2a6d;
   }
 
-/* hIghlights */
+  /* Highlights */
   dt::before {
     color: #ff2a6d;
   }
-  dt{
+
+  dt {
     color: #4c97e2;
+    font-size: 2rem;
     font-weight: bold;
   }
 
-/* issues dropdown */
+  dl {
+    padding-top: 4vw;
+    padding-bottom: 2vw;
+  }
+
+  /* Issues dropdown */
   .issues-label {
     font-size: 3rem;
     border-bottom: .5rem solid #4c97e2;
@@ -912,23 +904,26 @@ footer p {
     right: 5em;
   }
 
-/* home tagline */
+  /* Home tagline */
   #tagline{
     color: #ff2a6d;
     font-size: 10rem;
     display: inline-block;
-    /* text-align: center; */
   }
+
   .glitch{
     font-size: 10rem;
   }
+
   #last-bullet{
     margin-bottom: -10vh;
   }
-  /*  importance of digital privacy */
+
+  /*  Importance of digital privacy */
   .card{
     background-color:  #f07dea;
   }
+
   .menu_btn {
     display: block;
   }
@@ -952,9 +947,11 @@ footer p {
   .navbar ul li a {
     font-size: 2rem;
   }
+
   .navbar line {
     background: #4c97e2;
   }
+
   .navbar ul li a:hover {
     color: #05d9e8;
     cursor: pointer;
@@ -962,21 +959,17 @@ footer p {
     text-shadow: 0.1rem 0.1rem #05d9e8;
   }
 
-
   .protection-unordered {
     flex-direction: column;
-  }
-
-  dl {
-    padding-top: 4vw;
-    padding-bottom: 2vw;
-    
   }
 }
 
 /* Devices from 0px to 768px (inclusive) */
 @media (max-width: 768px) {
-/* Bullets for Effects of Data Breach */
+  .glitch {
+  }
+
+  /* Bullets for Effects of Data Breach */
   dl {
     columns: 1;
   }
@@ -984,8 +977,6 @@ footer p {
   dt {
     color: #05d0e8;
     font-family: "Montserrat", sans-serif;
-    font-size: 2.5rem;
-
   }
   
   dt::before {
@@ -994,24 +985,16 @@ footer p {
   }
   
   dd {
-    font-size: 2rem;
     margin-left: 5vw;
     margin-bottom: 5vh;
   }
 
-
-
-
-
-  .glitch{
-    font-size: -0.5em;
-  }
   .issues-label {
     font-size: 2.5rem;
     border-bottom: .5rem solid #4c97e2;
     color: #ff2a6d;
-    
   }
+
   .drop-down-arrow {
     border: 0.5rem solid #ff2a6d;
     border-width: 0 1rem 1rem 0;
@@ -1025,10 +1008,20 @@ footer p {
   dl {
     padding-top: 4vw;
     padding-bottom: 2vw;
-    
   }
 }
 
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #ff2a4d;
+  }
+  70% {
+    box-shadow: 0 0 0 2rem rgba(115, 138, 144, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(115, 138, 144, 0);
+  }
+}
 
 @keyframes glitch {
   0% {
@@ -1082,4 +1075,3 @@ footer p {
     left: -50vw;
   }
 }
-
