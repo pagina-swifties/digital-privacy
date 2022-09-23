@@ -77,9 +77,17 @@ body::before {
   border-radius: 2.5rem;
   color: #1b1b1b;
   padding: 1rem 5rem;
-
 }
 
+#definition .section-content {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#definition .section-content img {
+  width: 20%;
+  margin-right: 10rem;
+}
 
 .highlight {
   color: #ff2a4d;
@@ -216,8 +224,9 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5rem;
+  padding: 10rem 5rem;
   width: 100vw;
+  min-height: 60vh;
   /*Testing only remove if necessary */
   justify-content: center;
   text-align: start;
@@ -234,12 +243,11 @@ body > section:nth-of-type(2n){
 .section-heading {
   text-align: center;
   font-size: 6rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   font-family: 'BebasNeueRegular';
   font-weight: normal;
   font-style: normal; 
 }
-
 
 .section-content {
   display: flex;
@@ -248,25 +256,26 @@ body > section:nth-of-type(2n){
   width: 80vw;
   font-size: 2.1rem;
 }
-.card-wrapper{
+
+.card-wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  
 }
+
 .card-blur {
   margin: 1rem;
   padding: 1.2rem;
-  height: 300px;
-  width: 500px;
+  height: 30rem;
+  width: 50rem;
   overflow-x: hidden;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
   position: relative;
-  border-radius: 10px;
+  border-radius: 1rem;
   border: medium solid #01012b;
   background-color: transparent;
 }
@@ -285,38 +294,37 @@ body > section:nth-of-type(2n){
   background: #f0afc3; 
 }
 
-.card-blur::before {
-  content: '';
-  background-size: cover;
-  padding: 0.5rem;
-  height: 100%;
+.card-icon {
+  background-size: 7rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 10rem;
+  size: 10rem;
   width: 100%;
-  position: absolute;
-  filter: blur(10px);
-  z-index: -1;
+  /*filter: blur(5px);*/
 }
 
-.fb::before{
+.fb{
   background-image: url(../images/facebook.png);
 }
-.ab::before{
+.ab{
   background-image: url(../images/first-american.jpg);
 
 }
-.op::before{
+.op{
   background-image: url(../images/personnel-management.png);
 
 }
-.tw::before{
+.tw{
   background-image: url(../images/twitch.png);
-
 }
 
 .section-highlight{
   flex-direction: column; 
   align-items: center;
+  text-align: center;
   width: 80vw;
-  font-size: 4rem;
+  font-size: 3rem;
   border-style: dashed;
   padding: 2rem 2rem;
   border:medium dashed  #05d0e8;
@@ -568,7 +576,7 @@ input[name='panel']:checked + .issue-content {
   margin: 0;
 }
 
-.container{
+.card-container{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -580,20 +588,23 @@ input[name='panel']:checked + .issue-content {
   width: 100%;
 }
 
-.card{
+.card {
   background: #ff2a6d;
   color: #ffffff;
-  width: 470px;
-  margin: 10px;
+  width: 47rem;
+  height: 80rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 1.5rem;
   border: white;
-
 }
 
 .card-image {
   background-color: gray;
-  height: 370px;
+  height: 40rem;
   margin-bottom: 2rem;
   background-size: cover;
   border-radius: 15px 15px 0 0;
@@ -615,7 +626,7 @@ input[name='panel']:checked + .issue-content {
 
 .card a {
   background-color: white;
-  color: #f07dea;
+  color: #ff2a6d;
   padding:15px 20px;
   display: block;
   text-align: center;
@@ -625,9 +636,15 @@ input[name='panel']:checked + .issue-content {
 
 .card:hover {
   background-color: white;
-  color: black; 
+  color: #ff2a6d; 
   cursor: pointer;
-  transform: scale(1.03);
+  transform: scale(1.01);
+  transition: all 1s ease;
+}
+
+.card:hover a {
+  background-color: #ff2a6d;
+  color: white;
   transition: all 1s ease;
 }
 /*Importance End*/
@@ -691,6 +708,23 @@ footer p {
 
 /* Devices from 993px to 1200px (inclusive) */
 @media (max-width: 1200px) {
+  html {
+    color: #01012b;
+  }
+
+  body {
+    background: #eeee;
+  }
+
+  .section-content {
+    font-size: 1.6rem;
+  }
+
+  .section-highlight {
+    width: 90vw;
+    font-size: 2rem;
+  }
+
   #home {
     background-image: none;
     height: unset;
@@ -720,23 +754,6 @@ footer p {
 
   .statistic p {
     padding: unset;
-  }
-
-
-  html {
-    color: #01012b;
-    font-family: "Montserrat";
-    width: 100%;
-    font-size: 10px;
-    scroll-behavior: smooth;
-  }
-
-  body {
-    background: #eeee;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow-x: hidden;
   }
 
   .highlight {
@@ -800,6 +817,16 @@ footer p {
   .card{
     background-color:  #f07dea;
   }
+  
+  .card-blur {
+    margin: 1rem;
+    padding: 1rem;
+    overflow-y:hidden;
+    height: unset;
+    width: 100%;
+    font-size: 1.6rem;
+  }
+
   .menu_btn {
     display: block;
   }
@@ -896,14 +923,6 @@ footer p {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-  }
-
-  .card-blur {
-    margin: 1rem;
-    padding: 1.0rem;
-    height: 15em;
-    width: 25ch;
-    font-size: 2rem;
   }
 
   .glitch{
