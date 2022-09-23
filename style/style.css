@@ -269,7 +269,7 @@ body > section:nth-of-type(2n){
   margin: 1rem;
   padding: 1.2rem;
   height: 30rem;
-  width: 50rem;
+  width: 45%;
   overflow-x: hidden;
   overflow-y: scroll;
   display: flex;
@@ -279,6 +279,16 @@ body > section:nth-of-type(2n){
   border: medium solid #01012b;
   background-color: transparent;
 }
+
+.card-blur > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
 .card-blur::-webkit-scrollbar { 
   width: 10px;
 }
@@ -295,12 +305,11 @@ body > section:nth-of-type(2n){
 }
 
 .card-icon {
-  background-size: 7rem;
+  background-size: 10rem;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 10rem;
-  size: 10rem;
-  width: 100%;
+  height: 10rem;
+  width: 17rem;
   /*filter: blur(5px);*/
 }
 
@@ -424,6 +433,7 @@ dd {
   margin-left: 5vw;
   margin-bottom: 5vh;
 }
+
 #last-bullet{
   margin-bottom: -15vh;
 }
@@ -733,6 +743,11 @@ footer p {
     text-align: center;
   }
 
+  #definition .section-content img {
+    width: 40%;
+    margin-right: 5rem;
+  }
+
   .glitch {
     position: relative;
   }
@@ -898,6 +913,16 @@ footer p {
   .glitch{
     font-size: 5rem;
   }
+
+  #definition .section-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #definition .section-content img {
+    margin: 0 0 2rem 0;
+  }
+
 /* Bullets for Effects of Data Breach */
   dl {
     columns: 1;
