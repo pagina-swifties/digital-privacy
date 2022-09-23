@@ -672,7 +672,7 @@ ul.protection-unordered{
 
 .protection-unordered li{
   border-color: #ff2a4d;
-  border-width: .1px;
+  border-width: .5px;
   border-style: solid;
   display: grid;
   height: 25rem;
@@ -974,6 +974,7 @@ footer p {
 
 /* Devices from 0px to 768px (inclusive) */
 @media (max-width: 768px) {
+
 /* Bullets for Effects of Data Breach */
   dl {
     columns: 1;
@@ -996,6 +997,8 @@ footer p {
     margin-left: 5vw;
     margin-bottom: 5vh;
   }
+/* Bullets End */
+
 
 /* Picture resize for image */
 
@@ -1023,10 +1026,12 @@ footer p {
     font-size: 2rem;
   }
 
-
+/* Cards end */
   .glitch{
     font-size: -0.5em;
   }
+
+  /* Issues */
   .issues-label {
     font-size: 2.5rem;
     border-bottom: .5rem solid #4c97e2;
@@ -1042,6 +1047,28 @@ footer p {
     position: absolute;
     right: 3em;
   }
+/* issues end */
+
+/* Ways to protect */
+ul.protection-unordered{
+  display: flex;
+  font-size: 1.1rem;
+}
+
+.protection-unordered li{
+  border-color: #ff2a4d;
+  border-width:2px;
+  border-style: solid;
+  display: grid;
+  height: 23rem;
+  margin: .5rem;
+  margin-left: 1rem;
+  padding: 2rem;
+  text-align: center;
+  width: 30rem;
+}
+/* ways to protect end */
+
 
   dl {
     padding-top: 4vw;
