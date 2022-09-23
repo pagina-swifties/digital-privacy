@@ -196,7 +196,7 @@ body::before {
   width: 3rem;
   height: 3rem;
   cursor: pointer;
-  z-index: 100;
+  z-index: 9000;
 }
 
 .menu_btn > span,
@@ -333,7 +333,7 @@ body > section:nth-of-type(2n){
 /* Navigation Bar */
 .navbar {
   position: fixed;
-  z-index: 1;
+  z-index: 8000;
   display: flex;
   align-items: center;
   width: 100%;
@@ -392,11 +392,8 @@ dl {
   columns: 2;
   counter-reset: count;
   background: linear-gradient(90deg, rgba(252, 252, 252, 0.04) 20%, rgba(253, 198, 198, 0) 0%);
-  padding-left: 1vw;
-  padding-right: 4vw;
-  padding-top: 2rem;
+  padding: 5rem 0;
   margin: 0;
-  
 }
 
 dl + dl {
@@ -768,9 +765,13 @@ footer p {
   dt{
     color: #4c97e2;
     font-weight: bold;
+    font-size: 2.5rem;
+  }
+  dd {
+    font-size: 1.6rem;
   }
 
-/* issues dropdown */
+  /* issues dropdown */
   .issues-label {
     font-size: 3rem;
     border-bottom: .5rem solid #4c97e2;
@@ -866,9 +867,7 @@ footer p {
   }
 
   dl {
-    padding-top: 4vw;
-    padding-bottom: 2vw;
-    
+    padding: 5rem 0;
   }
 }
 
@@ -899,7 +898,6 @@ footer p {
   }
 
   dt {
-    color: #05d0e8;
     font-family: "Montserrat", sans-serif;
     font-size: 2.5rem;
   }
@@ -907,12 +905,6 @@ footer p {
   dt::before {
     margin-left: -1vw;
     padding-right: px;
-  }
-  
-  dd {
-    font-size: 2rem;
-    margin-left: 5vw;
-    margin-bottom: 5vh;
   }
 /* Bullets End */
 
@@ -966,12 +958,6 @@ ul.protection-unordered{
   width: 30rem;
 }
 /* ways to protect end */
-
-
-  dl {
-    padding-top: 4vw;
-    padding-bottom: 2vw;
-  }
 }
 
 @keyframes pulse {
