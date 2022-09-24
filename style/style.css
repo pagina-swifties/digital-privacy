@@ -670,6 +670,7 @@ input[name="panel"]:checked + .issue-content {
 
 .card-image {
   background-color: gray;
+  background-position: center;
   height: 40rem;
   margin-bottom: 2rem;
   background-size: cover;
@@ -728,7 +729,6 @@ input[name="panel"]:checked + .issue-content {
   font-size: 1.5rem;
   list-style: none;
   margin-bottom: 1rem;
-  z-index: -1;
   align-items: center;
 }
 
@@ -771,6 +771,7 @@ input[name="panel"]:checked + .issue-content {
   height: 35rem;
   width: 25rem;
   object-fit: cover;
+  object-position: center;
   transform-origin: bottom center;
   transform: perspective(500px) rotateX(0);
   transition: 0.5s all ease;
@@ -807,6 +808,12 @@ input[name="panel"]:checked + .issue-content {
   transform: perspective(500px) rotateX(0);
 }
 
+.bold {
+  font-weight: 700;
+}
+.italic {
+  font-style: italic;
+}
 
 /* Footer */
 footer {
@@ -840,9 +847,13 @@ footer p {
   width: 2rem;
   margin: auto;
 }
+strong, i {
+  display: inline;
+}
 
 #importance .section-content {
   align-items: start;
+  display: block;
 }
 
 /* Devices from 993px to 1200px (inclusive) */
@@ -851,12 +862,31 @@ footer p {
     color: #01012b;
   }
 
-  body {
-    background: #eeee;
+  #home {
+    background-color: white;
+  }
+
+  body > section:nth-of-type(2n) {
+    background: #f3f3ed;
+  }
+
+  body > section:nth-of-type(odd) {
+    background-color: #ff2a6d;
+  }
+
+  body > section:nth-of-type(odd) .section-heading{
+    color: white;
+  }
+  body > section:nth-of-type(odd) .section-content{
+    color: white;
+  }
+
+  body > section:nth-of-type(odd) .highlight {
+    color: #01012b;
   }
 
   footer {
-    background-color: #d1f7ff;
+    background-color: #f3f3ed;
   }
 
   .filter-blue {
@@ -868,11 +898,21 @@ footer p {
     font-size: 1.6rem;
   }
 
+  .section-content a {
+    color: white;
+  }
+
+  .section-content a:hover {
+    color: #f07dea;
+  }
+
   .section-highlight {
+    border-color: #01012b;
+    color: white;
     width: 90vw;
     font-size: 2rem;
   }
-
+  
   #home {
     background-image: none;
     height: unset;
@@ -898,6 +938,7 @@ footer p {
   }
 
   .glitch {
+    font-size: 13rem;
     position: relative;
   }
 
@@ -911,8 +952,8 @@ footer p {
   }
 
   .statistic {
-    color: #d1f7ff;
-    border-color: #d1f7ff;
+    color: #f3f3ed;
+    border-color: #f3f3ed;
   }
 
   .statistic {
@@ -935,10 +976,10 @@ footer p {
 
   /* Highlights */
   dt::before {
-    color: #ff2a6d;
+    color: #01012b;
   }
   dt {
-    color: #4c97e2;
+    color: #01012b;
     font-weight: bold;
     font-size: 2.5rem;
   }
@@ -946,7 +987,7 @@ footer p {
     font-size: 1.6rem;
   }
 
-  /* issues dropdown */
+  /* Issues dropdown */
   .issues-label {
     font-size: 3rem;
     border-bottom: 0.5rem solid #4c97e2;
@@ -981,10 +1022,6 @@ footer p {
     display: inline-block;
   }
 
-  .glitch {
-    font-size: 7rem;
-  }
-
   #last-bullet {
     margin-bottom: -10vh;
   }
@@ -992,6 +1029,10 @@ footer p {
   /* Importance of digital privacy */
   .card {
     background-color: #ff2a6d;
+  }
+
+  .card-content a {
+    color: #ff2a6d;
   }
 
   .card-blur {
@@ -1047,13 +1088,19 @@ footer p {
     background-color: white;
   }
 
+  #personalprotection ul li h2{
+    color: white;
+  }
+
   .protection-unordered {
+    color: white;
     flex-direction: column;
     margin: 0;
     width: 65vw;
   }
 
   .protection-unordered li {
+    border-color: #01012b;
     width: 100%;
     margin: 0 0 2rem 0;
   }
@@ -1105,7 +1152,7 @@ footer p {
   }
 
   .glitch {
-    font-size: 5rem;
+    font-size: 8rem;
   }
 
   #tagline + img {
