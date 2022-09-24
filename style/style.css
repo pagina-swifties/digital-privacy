@@ -1,4 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@font-face {
+  font-family: "Abril Fatface";
+  src: url(../font/AbrilFatface.ttf);
+}
+
+@font-face {
+  font-family: "BebasNeueRegular";
+  src: url(../fonts/BebasNeue.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat.ttf);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -782,7 +796,7 @@ input[name="panel"]:checked + .issue-content {
   text-align: left;
 }
 
-.member:hover img{
+.member:hover img {
   transform: perspective(500px) rotateX(50deg);
 }
 
@@ -798,12 +812,12 @@ input[name="panel"]:checked + .issue-content {
   align-items: center;
   transform-origin: bottom center;
   transform: perspective(500px) rotateX(-50deg);
-  opacity: 0 ;
+  opacity: 0;
   background: rgba(1, 1, 43, 0.9);
   transition: 0.5s all ease;
 }
 
-.member:hover .member_content{
+.member:hover .member_content {
   opacity: 1;
   transform: perspective(500px) rotateX(0);
 }
@@ -847,7 +861,8 @@ footer p {
   width: 2rem;
   margin: auto;
 }
-strong, i {
+strong,
+i {
   display: inline;
 }
 
@@ -874,10 +889,10 @@ strong, i {
     background-color: #ff2a6d;
   }
 
-  body > section:nth-of-type(odd) .section-heading{
+  body > section:nth-of-type(odd) .section-heading {
     color: white;
   }
-  body > section:nth-of-type(odd) .section-content{
+  body > section:nth-of-type(odd) .section-content {
     color: white;
   }
 
@@ -912,7 +927,7 @@ strong, i {
     width: 90vw;
     font-size: 2rem;
   }
-  
+
   #home {
     background-image: none;
     height: unset;
@@ -1088,7 +1103,7 @@ strong, i {
     background-color: white;
   }
 
-  #personalprotection ul li h2{
+  #personalprotection ul li h2 {
     color: white;
   }
 
@@ -1135,15 +1150,15 @@ strong, i {
 /* Devices from 0px to 768px (inclusive) */
 @media (max-width: 768px) {
   #eyelids {
-    border-radius: 37.5rem 0;
-    width: 25rem;
-    height: 22.5rem;
-    margin-left: 10rem;
+    border-radius: 30rem 0;
+    width: 20rem;
+    height: 18rem;
+    margin-left: 9rem;
   }
   #eyeball {
-    border-width: 2rem;
-    height: 8.5rem;
-    width: 8.5rem;
+    border-width: 1.6rem;
+    height: 6.8rem;
+    width: 6.8rem;
   }
 
   #tagline {
@@ -1152,11 +1167,11 @@ strong, i {
   }
 
   .glitch {
-    font-size: 8rem;
+    font-size: 7rem;
   }
 
   #tagline + img {
-    width: 60%;
+    width: 50%;
   }
 
   #definition .section-content {
