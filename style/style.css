@@ -1,4 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@font-face {
+  font-family: "Abril Fatface";
+  src: url(../font/AbrilFatface.ttf);
+}
+
+@font-face {
+  font-family: "BebasNeueRegular";
+  src: url(../fonts/BebasNeue.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat.ttf);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -244,7 +258,6 @@ section {
   padding: 10rem 5rem;
   width: 100vw;
   min-height: 60vh;
-  /*Testing only remove if necessary */
   justify-content: center;
   text-align: start;
   /* Scroll Snap */
@@ -288,6 +301,7 @@ body > section:nth-of-type(2n) {
   flex-direction: column;
   align-items: center;
   width: 80vw;
+  height: 100%;
   font-size: 2.2rem;
 }
 
@@ -349,7 +363,6 @@ body > section:nth-of-type(2n) {
   background-repeat: no-repeat;
   height: 10rem;
   width: 17rem;
-  /*filter: blur(5px);*/
 }
 
 .fb {
@@ -376,6 +389,7 @@ body > section:nth-of-type(2n) {
   border: medium dashed #05d0e8;
   margin: 5rem;
 }
+
 /* Navigation Bar */
 .navbar {
   position: fixed;
@@ -438,12 +452,11 @@ body > section:nth-of-type(2n) {
 }
 
 /* Bullet */
-
 .bullet {
   font-weight: bold;
 }
-/* Consequences  */
 
+/* Consequences  */
 .consequences-list {
   display: block;
 }
@@ -506,7 +519,7 @@ a:hover {
   color: #f07dea;
 }
 
-/* moving eyes */
+/* Moving eyes */
 #eyelids-desktop {
   background: #1b1b1b;
   border: #313131 solid 0.3rem;
@@ -559,32 +572,6 @@ a:hover {
   height: 6.8rem;
   width: 6.8rem;
   animation: eyemoveMobile 6s ease infinite;
-}
-
-@keyframes eyemove {
-  0% {
-    transform: translateX(0) translateY(0);
-  }
-
-  20% {
-    transform: translateX(0.7rem) translateY(-0.6rem);
-  }
-
-  40% {
-    transform: translateX(0.7rem) translateY(-0.6rem);
-  }
-
-  60% {
-    transform: translateX(0) translateY(0);
-  }
-
-  80% {
-    transform: translateX(-0.4rem) translateY(0.3em);
-  }
-
-  90% {
-    transform: translateX(-0.4rem) translateY(0.3em);
-  }
 }
 
 /* Issues */
@@ -667,13 +654,14 @@ input[name="panel"]:checked + .issue-content {
   margin: 0;
   flex-wrap: wrap;
   width: 100%;
+  height: 100%;
 }
 
 .card {
   background: #ff2a6d;
   color: #ffffff;
   width: 47rem;
-  height: 80rem;
+  min-height: 80rem;
   margin: 1rem;
   display: flex;
   flex-direction: column;
@@ -701,13 +689,13 @@ input[name="panel"]:checked + .issue-content {
 }
 
 .car-1 {
-  background-image: url("/images/cardimg1.jpg");
+  background-image: url("../images/cardimg1.jpg");
 }
 .car-2 {
-  background-image: url("/images/cardimg2.jpg");
+  background-image: url("../images/cardimg2.jpg");
 }
 .car-3 {
-  background-image: url("/images/cardimg3.png");
+  background-image: url("../images/cardimg3.png");
 }
 
 .card p {
@@ -752,7 +740,7 @@ input[name="panel"]:checked + .issue-content {
   border-width: 0.5px;
   border-style: solid;
   display: grid;
-  height: 25rem;
+  min-height: 25rem;
   margin: 0.5rem;
   margin-left: 5rem;
   padding: 2rem;
@@ -797,7 +785,7 @@ input[name="panel"]:checked + .issue-content {
   text-align: left;
 }
 
-.member:hover img{
+.member:hover img {
   transform: perspective(500px) rotateX(50deg);
 }
 
@@ -813,12 +801,12 @@ input[name="panel"]:checked + .issue-content {
   align-items: center;
   transform-origin: bottom center;
   transform: perspective(500px) rotateX(-50deg);
-  opacity: 0 ;
+  opacity: 0;
   background: rgba(1, 1, 43, 0.9);
   transition: 0.5s all ease;
 }
 
-.member:hover .member_content{
+.member:hover .member_content {
   opacity: 1;
   transform: perspective(500px) rotateX(0);
 }
@@ -862,7 +850,8 @@ footer p {
   width: 2rem;
   margin: auto;
 }
-strong, i {
+strong,
+i {
   display: inline;
 }
 
@@ -904,10 +893,10 @@ strong, i {
     background-color: #ff2a6d;
   }
 
-  body > section:nth-of-type(odd) .section-heading{
+  body > section:nth-of-type(odd) .section-heading {
     color: white;
   }
-  body > section:nth-of-type(odd) .section-content{
+  body > section:nth-of-type(odd) .section-content {
     color: white;
   }
 
@@ -942,7 +931,7 @@ strong, i {
     width: 90vw;
     font-size: 2rem;
   }
-  
+
   #home {
     background-image: none;
     height: unset;
@@ -1059,6 +1048,9 @@ strong, i {
   /* Importance of digital privacy */
   .card {
     background-color: #ff2a6d;
+    min-height: 40rem;
+    flex-direction: row;
+    width: 80vw;
   }
 
   .card-content a {
@@ -1118,7 +1110,7 @@ strong, i {
     background-color: white;
   }
 
-  #personalprotection ul li h2{
+  #personalprotection ul li h2 {
     color: white;
   }
 
@@ -1137,12 +1129,6 @@ strong, i {
 
   dl {
     padding: 5rem 0;
-  }
-
-  .card {
-    flex-direction: row;
-    width: 80vw;
-    height: unset;
   }
 
   .card-image {
@@ -1165,28 +1151,28 @@ strong, i {
 /* Devices from 0px to 768px (inclusive) */
 @media (max-width: 768px) {
   #eyelids {
-    border-radius: 37.5rem 0;
-    width: 25rem;
-    height: 22.5rem;
-    margin-left: 10rem;
+    border-radius: 21rem 0;
+    width: 14rem;
+    height: 12.6rem;
+    margin-left: 6.3rem;
   }
   #eyeball {
-    border-width: 2rem;
-    height: 8.5rem;
-    width: 8.5rem;
+    border-width: 1.12rem;
+    height: 4.76rem;
+    width: 4.76rem;
   }
 
   #tagline {
-    line-height: 10rem;
-    font-size: 5rem;
+    line-height: 8rem;
+    font-size: 3rem;
   }
 
   .glitch {
-    font-size: 8rem;
+    font-size: 5rem;
   }
 
   #tagline + img {
-    width: 60%;
+    width: 50%;
   }
 
   #definition .section-content {
@@ -1215,6 +1201,21 @@ strong, i {
   /* Bullets End */
 
   /* Cards resize */
+  .card {
+    flex-direction: column;
+  }
+
+  .card-image {
+    border-radius: 15px 15px 0 0;
+    height: 20rem;
+    width: 100%;
+  }
+
+  .card-content {
+    height: 30rem;
+    width: 100%;
+  }
+
   .card-wrapper {
     display: flex;
     flex-direction: row;
@@ -1230,13 +1231,15 @@ strong, i {
   }
 
   .drop-down-arrow {
-    border: 0.5rem solid #ff2a6d;
-    border-width: 0 1rem 1rem 0;
-    display: inline-block;
-    padding: 1rem;
-    position: absolute;
-    right: 3em;
+    display: none;
   }
+
+  .card-icon {
+    background-size: 5rem;
+    height: 7rem;
+    width: 15rem;
+  }
+
   /* issues end */
   .protection-unordered {
     width: 80vw;
@@ -1306,6 +1309,32 @@ strong, i {
   100% {
     display: none;
     left: -50vw;
+  }
+}
+
+@keyframes eyemove {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+
+  20% {
+    transform: translateX(0.7rem) translateY(-0.6rem);
+  }
+
+  40% {
+    transform: translateX(0.7rem) translateY(-0.6rem);
+  }
+
+  60% {
+    transform: translateX(0) translateY(0);
+  }
+
+  80% {
+    transform: translateX(-0.4rem) translateY(0.3em);
+  }
+
+  90% {
+    transform: translateX(-0.4rem) translateY(0.3em);
   }
 }
 
