@@ -863,19 +863,11 @@ i {
 /* Devices from 993px to 1200px (inclusive) */
 @media (max-width: 1200px) {
   #consequences{
-    position: relative;
-    background-attachment: fixed;
-    background-image: linear-gradient(rgba(255, 42, 109,0.8), rgba(255, 42, 109,0.8)), url(../images/space.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: none;
   }
   
   #personalprotection{
-    position: relative;
-    background-attachment: fixed; 
-    background-image: linear-gradient(rgba(255, 42, 109,0.8), rgba(255, 42, 109, 0.8)), url(../images/data-center.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: none;
   }
   html {
     color: #01012b;
