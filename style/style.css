@@ -1204,6 +1204,12 @@ i {
     display: none;
   }
 
+  .card-icon {
+    background-size: 5rem;
+    height: 7rem;
+    width: 15rem;
+  }
+
   /* issues end */
   .protection-unordered {
     width: 80vw;
