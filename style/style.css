@@ -1064,6 +1064,15 @@ footer p {
     width: 8.5rem;
   }
 
+  #tagline {
+    line-height: 10rem;
+    font-size: 5rem;
+  }
+
+  .glitch {
+    font-size: 5rem;
+  }
+
   #tagline + img {
     width: 60%;
   }
