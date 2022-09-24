@@ -286,6 +286,7 @@ body > section:nth-of-type(2n) {
   flex-direction: column;
   align-items: center;
   width: 80vw;
+  height: 100%;
   font-size: 2rem;
 }
 
@@ -638,13 +639,14 @@ input[name="panel"]:checked + .issue-content {
   margin: 0;
   flex-wrap: wrap;
   width: 100%;
+  height: 100%;
 }
 
 .card {
   background: #ff2a6d;
   color: #ffffff;
   width: 47rem;
-  height: 80rem;
+  min-height: 80rem;
   margin: 1rem;
   display: flex;
   flex-direction: column;
@@ -723,7 +725,7 @@ input[name="panel"]:checked + .issue-content {
   border-width: 0.5px;
   border-style: solid;
   display: grid;
-  height: 25rem;
+  min-height: 25rem;
   margin: 0.5rem;
   margin-left: 5rem;
   padding: 2rem;
@@ -1016,6 +1018,9 @@ i {
   /* Importance of digital privacy */
   .card {
     background-color: #ff2a6d;
+    min-height: 40rem;
+    flex-direction: row;
+    width: 80vw;
   }
 
   .card-content a {
@@ -1096,12 +1101,6 @@ i {
     padding: 5rem 0;
   }
 
-  .card {
-    flex-direction: row;
-    width: 80vw;
-    height: unset;
-  }
-
   .card-image {
     width: 40vw;
     height: 40rem;
@@ -1122,24 +1121,24 @@ i {
 /* Devices from 0px to 768px (inclusive) */
 @media (max-width: 768px) {
   #eyelids {
-    border-radius: 30rem 0;
-    width: 20rem;
-    height: 18rem;
-    margin-left: 9rem;
+    border-radius: 21rem 0;
+    width: 14rem;
+    height: 12.6rem;
+    margin-left: 6.3rem;
   }
   #eyeball {
-    border-width: 1.6rem;
-    height: 6.8rem;
-    width: 6.8rem;
+    border-width: 1.12rem;
+    height: 4.76rem;
+    width: 4.76rem;
   }
 
   #tagline {
-    line-height: 10rem;
-    font-size: 5rem;
+    line-height: 8rem;
+    font-size: 3rem;
   }
 
   .glitch {
-    font-size: 7rem;
+    font-size: 5rem;
   }
 
   #tagline + img {
@@ -1172,6 +1171,21 @@ i {
   /* Bullets End */
 
   /* Cards resize */
+  .card {
+    flex-direction: column;
+  }
+
+  .card-image {
+    border-radius: 15px 15px 0 0;
+    height: 20rem;
+    width: 100%;
+  }
+
+  .card-content {
+    height: 30rem;
+    width: 100%;
+  }
+
   .card-wrapper {
     display: flex;
     flex-direction: row;
@@ -1187,13 +1201,9 @@ i {
   }
 
   .drop-down-arrow {
-    border: 0.5rem solid #ff2a6d;
-    border-width: 0 1rem 1rem 0;
-    display: inline-block;
-    padding: 1rem;
-    position: absolute;
-    right: 3em;
+    display: none;
   }
+
   /* issues end */
   .protection-unordered {
     width: 80vw;
