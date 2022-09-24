@@ -700,13 +700,13 @@ input[name="panel"]:checked + .issue-content {
 }
 
 .car-1 {
-  background-image: url("/images/cardimg1.jpg");
+  background-image: url("../images/cardimg1.jpg");
 }
 .car-2 {
-  background-image: url("/images/cardimg2.jpg");
+  background-image: url("../images/cardimg2.jpg");
 }
 .car-3 {
-  background-image: url("/images/cardimg3.png");
+  background-image: url("../images/cardimg3.png");
 }
 
 .card p {
