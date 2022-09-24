@@ -149,12 +149,12 @@ body::before {
 
 .statistic p {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
   padding: 0 5rem;
 }
 
 .statistic span {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   padding-right: 5rem;
 }
@@ -239,7 +239,6 @@ section {
 body > section:nth-of-type(2n) {
   background-color: #d1f7ff;
   color: #01012b;
-  opacity: 0.8;
 }
 
 .section-heading {
@@ -249,6 +248,7 @@ body > section:nth-of-type(2n) {
   font-family: "BebasNeueRegular";
   font-weight: normal;
   font-style: normal;
+  cursor: default;
 }
 
 .section-subheading {
@@ -273,7 +273,7 @@ body > section:nth-of-type(2n) {
   flex-direction: column;
   align-items: center;
   width: 80vw;
-  font-size: 2.1rem;
+  font-size: 2rem;
 }
 
 .card-wrapper {
@@ -281,13 +281,14 @@ body > section:nth-of-type(2n) {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  margin-top: 5rem;
+  justify-content: space-evenly;
 }
 
 .card-blur {
-  margin: 1rem;
-  padding: 1.2rem;
-  height: 30rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  height: 35rem;
   width: 45%;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -297,6 +298,10 @@ body > section:nth-of-type(2n) {
   border-radius: 1rem;
   border: medium solid #01012b;
   background-color: transparent;
+}
+
+.card-blur p {
+  margin-bottom: 1rem;
 }
 
 .card-blur > div {
@@ -879,8 +884,8 @@ footer p {
   }
 
   .statistic {
-    color: white;
-    border-color: white;
+    color: #d1f7ff;
+    border-color: #d1f7ff;
   }
 
   .statistic {
@@ -893,6 +898,7 @@ footer p {
   }
 
   .statistic p {
+    font-weight: 400;
     padding: unset;
   }
 
@@ -996,9 +1002,11 @@ footer p {
   .navbar ul li a {
     font-size: 2rem;
   }
+
   .navbar line {
     background: #4c97e2;
   }
+
   .navbar ul li a:hover {
     color: #05d9e8;
     cursor: pointer;
